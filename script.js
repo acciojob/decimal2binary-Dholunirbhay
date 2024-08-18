@@ -7,7 +7,7 @@ function decimalToBinary(num) {
 		let digit;
 		digit = num%2;
 		binary =(binary*10) + digit;
-		num = num/2;
+		num = Math.floor(num/2);
 	}
 	return binary;
 }
